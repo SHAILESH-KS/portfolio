@@ -1,0 +1,205 @@
+/* ---------------- GLOBAL ---------------- */
+* {
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #f5f5f5;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2b5d4;
+  padding: 8px 15px;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #358f80;
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}
+
+/* ---------------- PROFILE ---------------- */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+.profile-text h1 {
+  font-size: 32px;
+  color: #358f80;
+  margin-bottom: 8px;
+}
+
+.profile-text p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.profile-img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+/* ---------------- ABOUT ---------------- */
+.about {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.about h2 {
+  font-size: 28px;
+  color: #358f80;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ---------------- PROJECTS ---------------- */
+.project {
+  width: 80%;
+  margin: auto;
+}
+
+.project h2 {
+  font-size: 28px;
+  color: #358f80;
+  margin-bottom: 20px;
+}
+
+.project .carousel-inner {
+  text-align: center;
+}
+
+.project-img {
+  width: 70%;
+  height: 400px;
+  object-fit: contain;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* ---------------- CONTACT ---------------- */
+.contact {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.contact h2 {
+  text-align: left;
+  color: #358f80;
+  margin-bottom: 15px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;           /* hidden by default */
+    flex-direction: row;     /* horizontal when shown */
+    background: #f2b5d4;     
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center; /* center items horizontally */
+    gap: 20px;               /* space between items */
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;           /* show on click */
+  }
+
+  .nav-links li {
+    margin: 0;               /* no vertical margin since horizontal */
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    margin: 20px auto 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .about,
+  .project,
+  .contact {
+    width: 95%;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .project-img {
+    width: 90%;
+    height: 250px;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navigation">
+    <button class="menu-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Profile Section -->
+  <div class="profile" id="profile">
+    <div class="profile-text">
+      <h1>SHAILESH K S</h1>
+      <p><strong>Web Developer</strong></p>
+      <p>
+        I am a passionate web developer with experience in creating dynamic
+        and responsive websites. I love coding and continuously learning new
+        technologies to enhance my skills.
+      </p>
+    </div>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am Shailesh K S from Madurai. I have knowledge in HTML, CSS, JavaScript,
+      and a bit of NodeJS and ExpressJS. I am currently good at frontend and
+      working towards backend development. I love coding and solving problems.
+    </p>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="project" id="projects">
+    <h2>Projects</h2>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="simon.png" class="d-block project-img" alt="Memory Game" />
+        </div>
+        <div class="carousel-item">
+          <img src="quiz.png" class="d-block project-img" alt="Quiz Website" />
+        </div>
+        <div class="carousel-item">
+          <img src="drum.png" class="d-block project-img" alt="Drum Website" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: shailesh18ks@gmail.com</p>
+    <p>Mobile: 7845481271</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
